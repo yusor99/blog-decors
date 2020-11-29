@@ -1,42 +1,29 @@
-import { Layout, Menu } from "antd";
-const { Sider } = Layout;
-const NavBar = () => {
-  return (
-    <div className="container">
-      <Menu
-        mode="horizontal"
-        style={{
-          margin: 5,
-          padding: 5,
-          color: "black",
-          fontSize: 35,
-          fontWeight: 700,
-        }}
-      >
-        <h1
-          class="ant-menu-item ant-menu-item-only-child"
-          role="menuitem"
-          key="1"
-          style={{
-            color: "black",
-            fontSize: 30,
-            fontWeight: 600,
-          }}
-        >
-          INTERIOR DESIGN
-        </h1>
-
-        <Menu.Item key="2">ABOUT</Menu.Item>
-        <Menu.Item key="3">PORTFOLIO</Menu.Item>
-        <Menu.Item key="4">TESTIMONIALS</Menu.Item>
-        <Menu.Item key="5">BLOG</Menu.Item>
-
-        <Menu.Item key="6" style={{ float: "right" }}>
-          CONTACT
-        </Menu.Item>
-      </Menu>
-    </div>
-  );
+import { useMediaQuery } from "react-responsive";
+import Labtop from "./labtop";
+import Mobile from "./mobile";
+const Desktop = ({ children }) => {
+  const isDesktop = useMediaQuery({ minWidth: 992 });
+  return isDesktop ? children : null;
 };
+const Tablet = ({ children }) => {
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
+  return isTablet ? children : null;
+};
+const Mobile2 = ({ children }) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  return isMobile ? children : null;
+};
+
+const NavBar = () => (
+  <div>
+    <Desktop>
+      <Labtop />
+    </Desktop>
+
+    <Mobile2>
+      <Mobile />
+    </Mobile2>
+  </div>
+);
 
 export default NavBar;
