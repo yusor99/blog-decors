@@ -1,6 +1,7 @@
 import { Divider, Row, Col } from "antd";
 import Cards from "../components/cards";
 import NavBar from "../components/navbar";
+import PureCard from "../components/pureCard";
 export default function Home() {
   return (
     <>
@@ -20,13 +21,13 @@ export default function Home() {
         <section className="container">
           <Row>
             <Col>
-              <Cards />
+              <PureCard />
             </Col>
             <Col>
-              <Cards />
+              <PureCard />
             </Col>
             <Col>
-              <Cards />
+              <PureCard />
             </Col>
           </Row>
         </section>
@@ -35,36 +36,40 @@ export default function Home() {
           Instagram Instagram
         </div>
         <section className="container ">
-          <Row gutter={[24, 16]}>
+          <Row gutter={[8, 16]}>
             <Col>
-              <img src="/img/bedroom.png" style={{ width: 523, height: 515 }} />
+              <img
+                src="/img/bedroom.png"
+                className="big-img"
+                style={{ width: 480, height: 469 }}
+              />
             </Col>
             <Col>
-              <Row gutter={[16, 16]}>
+              <Row gutter={[8, 8]}>
                 <Col>
-                  <img src="/img/box.png" style={{ width: 250, height: 250 }} />
+                  <img src="/img/box.png" style={{ width: 230, height: 230 }} />
                 </Col>
                 <Col>
                   <img
                     src="/img/boulder.png"
-                    style={{ width: 250, height: 250 }}
+                    style={{ width: 230, height: 230 }}
                   />
                 </Col>
               </Row>
-              <Row gutter={[16, 16]}>
+              <Row gutter={[8, 8]}>
                 <Col>
                   <img
                     src="/img/box.png"
                     style={{
-                      width: 250,
-                      height: 250,
+                      width: 230,
+                      height: 230,
                     }}
                   />
                 </Col>
                 <Col>
                   <img
                     src="/img/boulder.png"
-                    style={{ width: 250, height: 250 }}
+                    style={{ width: 230, height: 230 }}
                   />
                 </Col>
               </Row>

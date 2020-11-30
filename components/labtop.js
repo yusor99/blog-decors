@@ -1,6 +1,6 @@
 const Labtop = () => {
   return (
-    <div className="container">
+    <div className="container-Nav">
       <ul className="nav-ul" style={{ marginTop: 10 }}>
         <li style={{ fontSize: 30, fontWeight: 600, color: "black" }}>
           INTERIOR DESIGN
