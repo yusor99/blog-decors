@@ -4,12 +4,14 @@
   /* border-bottom: 1px solid #f0f0f0; */
   box-shadow: none;
 }
-
 .center {
   display: flex;
   margin: auto;
   align-items: center;
   justify-content: center;
+  font-size: 35px;
+  margin-bottom: 20px;
+  flex-direction: column;
 }
 .activefalse {
   display: none;
@@ -21,7 +23,7 @@
   background-color: rgba(0, 0, 0, 0.966);
   position: absolute;
   z-index: 5;
-  width: 100%;
+  width: 390px;
 }
 .trigger {
   position: absolute;
@@ -72,12 +74,9 @@
   margin: 10px;
   width: 300px;
   height: 460px;
+  font-size: 15px;
 }
 
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-}
 .button {
   padding: 8px 30px;
   border-radius: 4px;
@@ -87,6 +86,7 @@
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
 .footer {
   padding-bottom: 20px;
   padding-top: 10px;
@@ -113,11 +113,25 @@
   }
   .center {
     display: flex;
-    width: 400px;
+    width: 350px;
+    font-size: 25px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
   }
+
   .container {
-    max-width: 400px;
-    padding: 0px;
-    margin: 0px;
+    max-width: 350px;
+
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
   }
 }

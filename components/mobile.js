@@ -8,7 +8,7 @@ const Mobile = () => {
     setActive(!active);
   };
   return (
-    <div className="container">
+    <div>
       <ul className={`active${active}`}>
         <li style={{ fontSize: 20, fontWeight: 400, color: "silver" }}>
           INTERIOR DESIGN
