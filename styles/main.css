@@ -16,6 +16,10 @@
 .activefalse {
   display: none;
 }
+.big-img {
+  width: 460px;
+  height: 468px;
+}
 .activetrue {
   display: block;
   list-style: none;
