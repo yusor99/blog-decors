@@ -19,13 +19,16 @@ const Mobile = () => {
         <li>BLOG</li>
         <li>CONTACT</li>
       </ul>
-      {React.createElement(
+      <div className="trigger-div">
+        {React.createElement(
         isCollapsed ? AlignLeftOutlined : AlignRightOutlined,
         {
           className: "trigger",
           onClick: toggle,
         }
       )}
+      </div>
+     
     </div>
   );
 };

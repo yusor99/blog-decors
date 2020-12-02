@@ -24,22 +24,29 @@
   display: block;
   list-style: none;
   color: silver;
-  background-color: rgba(0, 0, 0, 0.966);
+  background-color: rgb(255, 255, 255);
   position: absolute;
   z-index: 5;
-  width: 390px;
+  width: 90%;
+  height: 100%;
 }
 .trigger {
   position: absolute;
   left: 0px;
   top: 0px;
-  color: slateblue;
   z-index: 10;
-  font-size: 20px;
+  font-size: 30px;
+  margin: 2px 2px 5px;
 }
-
+.trigger-div {
+  z-index: 100;
+  width: 100%;
+  height: 25px;
+  padding-bottom: 35px;
+  background-color: rgba(238, 235, 235, 0.295);
+}
 .activetrue li {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .nav-ul {
@@ -53,8 +60,8 @@
   cursor: pointer;
 }
 .nav-ul li:hover {
-  border-bottom: 1px solid slateblue;
-  transition: all 0.4s ease-in-out;
+  text-shadow: 1px 1px #3b3b3bad;
+  transition: all 0.1s ease-in-out;
 }
 .nav-ul li {
   margin-right: 15px;
@@ -101,7 +108,7 @@
   font-size: 25px;
   color: silver;
 }
-@media (max-width: 576px) {
+@media (max-width: 900px) {
   .home-cover {
     display: none;
   }

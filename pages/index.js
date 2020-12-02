@@ -14,13 +14,13 @@ export default function Home() {
         <div className="container">
           <div className="center">
             <h7>Custom Built Adobe XD Template</h7>
-            
+
             <h7>Download for Free</h7>
           </div>
 
           <Divider />
           <section className="center">
-            <Row>
+            <Row style={{ alignItems: "center", justifyContent: "center" }}>
               <Col>
                 <PureCard />
               </Col>
@@ -35,12 +35,18 @@ export default function Home() {
           <Divider />
           <div className="center">Instagram Instagram</div>
           <section className="center">
-            <Row gutter={[8, 16]}>
+            <Row
+              gutter={[8, 16]}
+              style={{ alignItems: "center", justifyContent: "center" }}
+            >
               <Col>
                 <img src="/img/bedroom.png" className="big-img" />
               </Col>
               <Col>
-                <Row gutter={[8, 8]}>
+                <Row
+                  gutter={[8, 8]}
+                  style={{ alignItems: "center", justifyContent: "center" }}
+                >
                   <Col>
                     <img
                       src="/img/box.png"
@@ -54,7 +60,10 @@ export default function Home() {
                     />
                   </Col>
                 </Row>
-                <Row gutter={[8, 8]}>
+                <Row
+                  gutter={[8, 8]}
+                  style={{ alignItems: "center", justifyContent: "center" }}
+                >
                   <Col>
                     <img
                       src="/img/box.png"

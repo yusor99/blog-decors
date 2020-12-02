@@ -17,6 +17,7 @@ a {
 .container-Nav {
   margin: auto;
   max-width: 1100px;
+  min-width: 900px;
 }
 .container {
   margin: auto;
