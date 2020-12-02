@@ -23,12 +23,46 @@
 .activetrue {
   display: block;
   list-style: none;
-  color: silver;
+  color: rgb(126, 125, 125);
   background-color: rgb(255, 255, 255);
-  position: absolute;
+  position: fixed;
   z-index: 5;
   width: 90%;
   height: 100%;
+  box-shadow: 5px 5px 5px #dad9d9;
+  -webkit-animation: backInLeft 1.5s;
+  animation: backInLeft 1s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+@-webkit-keyframes backInLeft {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  80% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes backInLeft {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  80% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 .trigger {
   position: absolute;
@@ -107,6 +141,31 @@
   align-items: center;
   font-size: 25px;
   color: silver;
+}
+@keyframes twistInLeft {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(1) translateX(-100%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0px) rotate(-360deg) scale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+}
+
+.trigger {
+  -webkit-animation-name: twistInLeft 0.5s;
+  animation-name: twistInLeft 0.5s;
+  animation: twistInLeft 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 @media (max-width: 900px) {
   .home-cover {
